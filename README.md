@@ -1,20 +1,20 @@
 # liiine
-Calculate the distance of a line from two cartesian points.
+Calculate the distance of a line from two cartesian points with a form-based UI and javascript / client-side calculation.
 
-readme.md - you are here.
+<b>readme.md</b> - you are here.
 
-index.html - html page and javascript code for calculation, self-contained into one file. links the pure css external library.
+<b>index.html</b> - html page and javascript code for calculation, self-contained into one file. links the pure css external library.
 
 
 /css/
 
-paintcoat.css - my personal modifications of the pure css base.
+<b>paintcoat.css</b> - my personal modifications of the pure css base.
 
 
 credits:
 
 
-formula - https://www.varsitytutors.com/sat_math-help/how-to-find-the-length-of-a-line-with-distance-formula
+<b>formula</b> - https://www.varsitytutors.com/sat_math-help/how-to-find-the-length-of-a-line-with-distance-formula
 
 
-pure css 2.0.1 - https://purecss.io/
+<b>pure css 2.0.1</b> - https://purecss.io/
