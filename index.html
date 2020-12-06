@@ -10,7 +10,8 @@
 <link rel="stylesheet" href="/final/css/paintcoat.css">
 <body>
 
-<form>
+<form> <!-- input values. JS function takes values from inputs to calculate. 
+no "form" processing is done, the form is for visual formatting and separating input area from output -->
 	<fieldset>
 		<legend>Calculate line length from points:</legend>
 		<p>
@@ -51,7 +52,7 @@
 			return 0;
 		} else { return 1 };
 	}
-	function doCalc() {
+	function doCalc() { //gets values, validates, then if validation passes, calculates
 		fx1 = document.getElementById("x1").value;
 		fy1 = document.getElementById("y1").value;
 		fx2 = document.getElementById("x2").value;
