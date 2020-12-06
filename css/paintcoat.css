@@ -1,0 +1,13 @@
+html {
+	margin: 10px;
+}
+fieldset {
+	border-color: #A0E7E5;
+	border-width: 2px;
+	border-bottom-width: 4px;
+}
+input {
+	border-color: #A0E7E5;
+	border-radius: 0px;
+	background-color: rgba(160,231,229,0.15);
+}

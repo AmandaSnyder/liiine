@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Line Length</title>
+<meta charset="UTF-8">
+<meta name="author" content="Amanda Snyder">
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.1/build/pure-min.css" integrity="sha384-QkSsJi6SGgWv5LAx1TdvIDRf8TW5Ui4NVKqDDlK1wY2eKioo7wvYIJvGWFQSFE4U" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" href="/final/css/paintcoat.css">
+<body>
+
+<form>
+	<fieldset>
+		<legend>Calculate line length from points:</legend>
+		<p>
+		<label for="x1">Point 1 - X</label>
+		<input type="text" id="x1" name="x1">
+		, 
+		<label for="y1">Point 1 - Y</label>
+		<input type="text" id="y1" name="y1"></p>
+		<br>
+		<p>
+		<label for="x2">Point 2 - X</label>
+		<input type="text" id="x2" name="x2">
+		, 
+		<label for="y2">Point 2 - Y</label>
+		<input type="text" id="y2" name="y2"></p>
+		<br>
+		<input type="button" id="calc" name="calc" value="Calculate" onclick="doCalc()">
+	</fieldset>
+	<fieldset>
+	<legend>Length:</legend>
+	<p id="output"></p>
+	</fieldset>
+</form>
+<script>
+	function calcLen(fx1, fy1, fx2, fy2) {
+		//distance formula from https://www.varsitytutors.com/sat_math-help/how-to-find-the-length-of-a-line-with-distance-formula
+		//formula = sqrt((x2 - x1)^2 + (y2 - y1)^2)
+		var len = 0;
+		var inmost1 = Math.pow((fx2 - fx1), 2);
+		var inmost2 = Math.pow((fy2 - fy1), 2);
+		var inner = inmost1 + inmost2;
+		var len = Math.sqrt(inner);
+		return len;
+	}
+	function validate(fx1, fy1, fx2, fy2) {
+		if (isNaN(fx1) || isNaN(fx2) || isNaN(fy1) || isNaN(fy2)) {
+			document.getElementById("output").innerHTML = "input should be entirely numeric.";
+			return 0;
+		} else { return 1 };
+	}
+	function doCalc() {
+		fx1 = document.getElementById("x1").value;
+		fy1 = document.getElementById("y1").value;
+		fx2 = document.getElementById("x2").value;
+		fy2 = document.getElementById("y2").value;
+		var v = validate(fx1, fy1, fx2, fy2);
+		if (v == 1) {
+			var len = calcLen(fx1, fy1, fx2, fy2);
+			document.getElementById("output").innerHTML = len;
+		}
+	}
+</script>
+</body>
