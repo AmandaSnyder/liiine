@@ -1,5 +1,5 @@
 # liiine
-Calculate the distance of a line from two cartesian points with a form-based UI and javascript / client-side calculation.
+Calculate the distance of a line from two cartesian points with a form-based UI and server-side calculation. Heavy WIP. The main / client-side code is here as a placeholder until it is fully replaced.
 
 <b>readme.md</b> - you are here.
 
