@@ -11,6 +11,11 @@ Calculate the distance of a line from two cartesian points with a form-based UI 
 <b>paintcoat.css</b> - my personal modifications of the pure css base.
 
 
+external links:
+
+https://app.swaggerhub.com/apis/as13717-gsu/liiine/1.0.0 - documentation of the WIP API.
+
+
 credits:
 
 
@@ -18,3 +23,5 @@ credits:
 
 
 <b>pure css 2.0.1</b> - https://purecss.io/
+
+
